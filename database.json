@@ -3,128 +3,176 @@
     "action_list": [
         {
             "name": "bom",
-            "target": ["dia"],
+            "target": [
+                "dia"
+            ],
             "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
         },
         {
             "name": "boa",
-            "target": ["tarde","noite"],
+            "target": [
+                "tarde",
+                "noite"
+            ],
             "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
         },
         {
             "name": "saudações",
-            "target": [""],
+            "target": [
+                ""
+            ],
             "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
         },
         {
             "name": "olá",
-            "target": [""],
+            "target": [
+                ""
+            ],
             "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
         },
         {
             "name": "tudo",
-            "target": ["bom","bem"],
+            "target": [
+                "bom",
+                "bem"
+            ],
             "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
         },
         {
             "name": "nao",
-            "target": ["reproduzir"],
+            "target": [
+                "reproduzir"
+            ],
             "response": ""
         },
         {
             "name": "familia",
-            "target": ["pato"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
-        },
-        {
-            "name": "pais",
-            "target": ["chita"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "target": [
+                "leão"
+            ],
+            "response": "A família do leão é a Felidae.Algumas outras espécies que fazem parte da família Felidae são: tigre, jaguar, leopardo, onça-pintada, gato doméstico, lince, entre outros."
         },
         {
             "name": "habitat",
-            "target": ["leão"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "target": [
+                "leão"
+            ],
+            "response": "O habitat natural do leão são as savanas, planícies e algumas áreas de florestas da África Subsaariana."
         },
         {
-            "name": "josias",
-            "target": ["fila"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "país",
+            "target": [
+                "leão"
+            ],
+            "response": "O país de origem do leão é a maior parte da África subsaariana, exceto a região da floresta tropical e algumas áreas no extremo sul da África."
         },
         {
-            "name": "pedro",
-            "target": ["fila"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "familia",
+            "target": [
+                "chita",
+                "china"
+            ],
+            "response": "A chita pertence à família Felidae, assim como o leão, o tigre e outras espécies de felinos."
         },
         {
-            "name": "carlos",
-            "target": ["fila"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "habitat",
+            "target": [
+                "chita",
+                "china"
+            ],
+            "response": "O habitat natural da chita é composto por savanas e algumas áreas semiáridas da África."
         },
         {
-            "name": "barbeiros",
-            "target": ["listas"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "país",
+            "target": [
+                "chita",
+                "china"
+            ],
+            "response": "A chita, também conhecida como guepardo, é nativa do continente africano e pode ser encontrada em diversos países, como Angola, Namíbia, Botswana, Zimbabwe, Moçambique, Tanzânia, Quênia e África do Sul."
         },
         {
-            "name": "qual",
-            "target": ["horário"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "familia",
+            "target": [
+                "salamandra"
+            ],
+            "response": "A salamandra pertence à família Salamandridae, que inclui também outras espécies de salamandras."
         },
         {
-            "name": "vocês",
-            "target": ["aceitam"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "habitat",
+            "target": [
+                "salamandra"
+            ],
+            "response": "As salamandras geralmente vivem em ambientes úmidos, como florestas, rios, lagos e riachos."
         },
         {
-            "name": "aceitam",
-            "target": ["pix","débito","crédito","dinheiro","cartão"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "país",
+            "target": [
+                "salamandra"
+            ],
+            "response": "As salamandras geralmente vivem em ambientes úmidos, como florestas, rios, lagos e riachos."
         },
         {
-            "name": "qual",
-            "target": ["tipos","tipo","corte","procedimento","estilo"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "família",
+            "target": [
+                "cachorro"
+            ],
+            "response": "O cachorro é um animal doméstico e pertence à família Canidae, que inclui também lobos, raposas e coiotes."
         },
         {
-            "name": "quais",
-            "target": ["tipos","tipo","corte","procedimento","estilo"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "habitat",
+            "target": [
+                "cachorro"
+            ],
+            "response": "Os cachorros, como animais domésticos, geralmente vivem em ambientes domésticos, como casas e apartamentos, mas seus ancestrais, os lobos, vivem em habitats variados, como florestas, pradarias e tundras."
         },
         {
-            "name": "que",
-            "target": ["tipos","tipo","corte","procedimento","estilo"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "país",
+            "target": [
+                "cachorro"
+            ],
+            "response": "Os cachorros, como animais domésticos, estão presentes em todo o mundo, mas seus ancestrais, os lobos, têm distribuição geográfica ampla, ocorrendo em todos os continentes, exceto a Antártica."
         },
         {
-            "name": "tipo",
-            "target": ["cabelo","corte"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "família",
+            "target": [
+                "pato"
+            ],
+            "response": "O pato pertence à família Anatidae, que inclui também outras aves aquáticas como gansos e cisnes."
         },
         {
-            "name": "vendem",
-            "target": ["água","refrigerante","produtos","salgadinho"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "habitat",
+            "target": [
+                "pato"
+            ],
+            "response": "Os patos são encontrados em todo o mundo, em habitats aquáticos como lagos, rios, pântanos e oceanos."
         },
         {
-            "name": "posso",
-            "target": ["agendar","agenda"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "país",
+            "target": [
+                "pato"
+            ],
+            "response": "Os patos podem ser encontrados em quase todos os países do mundo, mas alguns dos principais países de origem são China, Estados Unidos, Rússia e França."
         },
         {
-            "name": "quero",
-            "target": ["agendar","agenda"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "família",
+            "target": [
+                "periquito"
+            ],
+            "response": "O periquito pertence à família Psittacidae, que inclui também outras espécies de papagaios e araras."
         },
         {
-            "name": "agendar",
-            "target": ["josias","pedro","carlos"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "habitat",
+            "target": [
+                "periquito"
+            ],
+            "response": "Os periquitos são encontrados em ambientes diversos, como florestas, savanas, desertos e até em áreas urbanas."
         },
         {
-            "name": "agenda",
-            "target": ["josias","pedro","carlos"],
-            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+            "name": "país",
+            "target": [
+                "periquito"
+            ],
+            "response": "Os periquitos são encontrados em diversos países, incluindo Austrália, América do Sul, África e Ásia."
         }
     ]
 }
