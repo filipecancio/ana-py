@@ -110,6 +110,24 @@ def run_command(action,target):
 
     return is_valid,response
 
+def run_command_two(action,target):
+    global action_list
+
+    is_valid = False
+    response = None
+
+    if action and target:
+        action_list_action_filtered = list(filter(lambda item: item["name"] == action, action_list))
+        print(action_list_action_filtered)
+        action_list_filtered = list(filter(lambda item: target in item["target"], action_list_action_filtered))
+        print(action_list_filtered)
+        if len(action_list_filtered) > 0:
+                    is_valid = True
+                    response = action_list_filtered[0]["response"]
+
+
+    return is_valid,response
+
 def send_response(response):
     if response == "":
         pass
@@ -134,7 +152,7 @@ if __name__ == "__main__":
 
             if command:
                 action, target = get_tokenized_command(command)
-                is_valid, response = run_command(action, target)
+                is_valid, response = run_command_two(action, target)
                 if is_valid:
                     send_response(response)
                 else:
