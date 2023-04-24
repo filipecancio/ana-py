@@ -118,9 +118,7 @@ def run_command_two(action,target):
 
     if action and target:
         action_list_action_filtered = list(filter(lambda item: item["name"] == action, action_list))
-        print(action_list_action_filtered)
         action_list_filtered = list(filter(lambda item: target in item["target"], action_list_action_filtered))
-        print(action_list_filtered)
         if len(action_list_filtered) > 0:
                     is_valid = True
                     response = action_list_filtered[0]["response"]
@@ -157,7 +155,7 @@ if __name__ == "__main__":
                     send_response(response)
                 else:
                     if action == None:
-                        print("audio processado sem a key barber. Ignorar.")
+                        print("audio processado sem a key ana. Ignorar.")
                     else:
                         send_response("Não entendi o comando. Repita, por favor!")
         except KeyboardInterrupt:

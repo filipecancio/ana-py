@@ -8,16 +8,36 @@ def getDirectory(rel_dir):
     complete_dir = script_dir + rel_dir
     return complete_dir
 
-agendar_1 = getDirectory("/audio/agendar_1.wav")
-cortes_1 = getDirectory("/audio/cortes_1.wav")
-disponibilidade_1 = getDirectory("/audio/disponibilidade_1.wav")
 errado_1 = getDirectory("/audio/errado_1.wav")
 errado_2 = getDirectory("/audio/errado_2.wav")
-fila_1 = getDirectory("/audio/fila_1.wav")
-horario_1 = getDirectory("/audio/horario_1.wav")
-pagamento_1 = getDirectory("/audio/pagamento_1.wav")
-produtos_1 = getDirectory("/audio/produtos_1.wav")
-saudacao_1 = getDirectory("/audio/saudacao_1.wav")
+
+habitat_chita = getDirectory("/audio/habitat_chita.wav")
+familia_chita = getDirectory("/audio/familia_chita.wav")
+pais_chita = getDirectory("/audio/pais_chita.wav")
+habitat_leao = getDirectory("/audio/habitat_leao.wav")
+familia_leao = getDirectory("/audio/familia_leao.wav")
+pais_leao = getDirectory("/audio/pais_leao.wav")
+habitat_periquito = getDirectory("/audio/habitat_periquito.wav")
+familia_periquito = getDirectory("/audio/familia_periquito.wav")
+pais_periquito = getDirectory("/audio/pais_periquito.wav")
+habitat_salamandra = getDirectory("/audio/habitat_salamandra.wav")
+familia_salamandra = getDirectory("/audio/familia_salamandra.wav")
+pais_salamandra = getDirectory("/audio/pais_salamandra.wav")
+habitat_cachorro = getDirectory("/audio/habitat_cachorro.wav")
+familia_cachorro = getDirectory("/audio/familia_cachorro.wav")
+pais_cachorro = getDirectory("/audio/pais_cachorro.wav")
+habitat_pato = getDirectory("/audio/habitat_pato.wav")
+familia_pato = getDirectory("/audio/familia_pato.wav")
+pais_pato = getDirectory("/audio/pais_pato.wav")
+
+# agendar_1 = getDirectory("/audio/agendar_1.wav")
+# cortes_1 = getDirectory("/audio/cortes_1.wav")
+# disponibilidade_1 = getDirectory("/audio/disponibilidade_1.wav")
+# fila_1 = getDirectory("/audio/fila_1.wav")
+# horario_1 = getDirectory("/audio/horario_1.wav")
+# agamento_1 = getDirectory("/audio/pagamento_1.wav")
+# produtos_1 = getDirectory("/audio/produtos_1.wav")
+# saudacao_1 = getDirectory("/audio/saudacao_1.wav")
         
 class TesteNome(unittest.TestCase):
 
@@ -42,135 +62,210 @@ class TesteNome(unittest.TestCase):
 
         self.assertTrue(response == "")
 
-
-class TesteAgendamento(unittest.TestCase):
-
-    def setUp(self):
-        get_data_settings()
-
-    def testar_atendimento(self):
-        phrase = hear_audio(agendar_1)
-        print(f"comando reconhecido: {phrase}")
-
-        action, target = get_tokenized_command(phrase)
-        is_valid,response = run_command(action, target)
-
-        self.assertTrue(response == "Para agendar, basta dizer por exemplo: 'Barber, agendar com josias'. Para saber quais são os nomes dos nossos barbeiros, diga: 'barber, lista de barbeiros'.")
-
-        
-class TesteCortes(unittest.TestCase):
+class TesteLeao(unittest.TestCase):
 
     def setUp(self):
         get_data_settings()
 
-    def testar_cortes(self):
-        phrase = hear_audio(cortes_1)
-        print(f"comando reconhecido: {phrase}")
+    def testar_familia(self):
+        phrase_familia = hear_audio(familia_leao)
+        print(f"comando reconhecido: {phrase_familia}")
 
-        action, target = get_tokenized_command(phrase)
-        is_valid,response = run_command(action, target)
+        action, target = get_tokenized_command(phrase_familia)
+        is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Fazemos todos os tipos de cortes de cabelo. Dá uma olhada no nosso instagram e você poderá ter um catálogo completo de nossos serviços.")
-        
-class TesteDisponibilidade(unittest.TestCase):
+        self.assertTrue(response == "A família do leão é a Felidae.Algumas outras espécies que fazem parte da família Felidae são: tigre, jaguar, leopardo, onça-pintada, gato doméstico, lince, entre outros.")
 
-    def setUp(self):
-        get_data_settings()
+    def testar_pais(self):
+        phrase_pais = hear_audio(pais_leao)
+        print(f"comando reconhecido: {phrase_pais}")
 
-    def testar_disponibilidade(self):
-        phrase = hear_audio(disponibilidade_1)
-        print(f"comando reconhecido: {phrase}")
+        action, target = get_tokenized_command(phrase_pais)
+        is_valid,response = run_command_two(action, target)
 
-        action, target = get_tokenized_command(phrase)
-        is_valid,response = run_command(action, target)
+        self.assertTrue(response == "O país de origem do leão é a maior parte da África subsaariana, exceto a região da floresta tropical e algumas áreas no extremo sul da África.")
 
-        self.assertTrue(response == "sim! temos cortes disponiveis para hoje. Pedro atende das 7h às 19h, Carlos atende das 14h às 17h e josias das 16h às 20h.")
+    def testar_habitat(self):
+        phrase_habitat = hear_audio(habitat_leao)
+        print(f"comando reconhecido: {phrase_habitat}")
 
-        
-class TesteFila(unittest.TestCase):
+        action, target = get_tokenized_command(phrase_habitat)
+        is_valid,response = run_command_two(action, target)
 
-    def setUp(self):
-        get_data_settings()
+        self.assertTrue(response == "O habitat natural do leão são as savanas, planícies e algumas áreas de florestas da África Subsaariana.")
 
-    def testar_fila(self):
-        phrase = hear_audio(fila_1)
-        print(f"comando reconhecido: {phrase}")
-
-        action, target = get_tokenized_command(phrase)
-        is_valid,response = run_command(action, target)
-
-        self.assertTrue(response == "Para saber quantos clientes faltam para determinado barbeiro, como por exemplo josias, diga: 'barber, josias fila'. Para saber quais são os nomes dos nossos barbeiros, diga: 'barber, barbeiros lista'")
-        
-class TesteHorario(unittest.TestCase):
+class TesteChita(unittest.TestCase):
 
     def setUp(self):
         get_data_settings()
 
-    def testar_horario(self):
-        phrase = hear_audio(horario_1)
-        print(f"comando reconhecido: {phrase}")
+    def testar_familia(self):
+        phrase_familia = hear_audio(familia_chita)
+        print(f"comando reconhecido: {phrase_familia}")
 
-        action, target = get_tokenized_command(phrase)
-        is_valid,response = run_command(action, target)
+        action, target = get_tokenized_command(phrase_familia)
+        is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Atendemos de segunda à sexta das 7h à 20h. Pedro atende das 7h às 19h, Carlos atende das 14h às 17h e josias das 16h às 20h.")
-        
-class TestePagamento(unittest.TestCase):
+        self.assertTrue(response == "A chita, também conhecida como guepardo, pertence à família Felidae, assim como o leão, o tigre e outras espécies de felinos.")
 
-    def setUp(self):
-        get_data_settings()
+    def testar_pais(self):
+        phrase_pais = hear_audio(pais_chita)
+        print(f"comando reconhecido: {phrase_pais}")
 
-    def testar_pagamento(self):
-        phrase = hear_audio(pagamento_1)
-        print(f"comando reconhecido: {phrase}")
+        action, target = get_tokenized_command(phrase_pais)
+        is_valid,response = run_command_two(action, target)
 
-        action, target = get_tokenized_command(phrase)
-        is_valid,response = run_command(action, target)
+        self.assertTrue(response == "A chita, também conhecida como guepardo, é nativa do continente africano e pode ser encontrada em diversos países, como Angola, Namíbia, Botswana, Zimbabwe, Moçambique, Tanzânia, Quênia e África do Sul.")
 
-        self.assertTrue(response == "Aceitamos débito, crédito, dinheiro e pix.")
-        
-class TesteProduto(unittest.TestCase):
+    def testar_habitat(self):
+        phrase_habitat = hear_audio(habitat_chita)
+        print(f"comando reconhecido: {phrase_habitat}")
 
-    def setUp(self):
-        get_data_settings()
+        action, target = get_tokenized_command(phrase_habitat)
+        is_valid,response = run_command_two(action, target)
 
-    def testar_produtos(self):
-        phrase = hear_audio(produtos_1)
-        print(f"comando reconhecido: {phrase}")
+        self.assertTrue(response == "O habitat natural da chita, também conhecida como guepardo, é composto por savanas e algumas áreas semiáridas da África.")
 
-        action, target = get_tokenized_command(phrase)
-        is_valid,response = run_command(action, target)
-
-        self.assertTrue(response == "Temos um freezer com refigerantes e água. Basta escolher um e pegar, o valor será debitado ao pagamento do corte.")
-
-class TesteSaudacao(unittest.TestCase):
+class TesteSalamandra(unittest.TestCase):
 
     def setUp(self):
         get_data_settings()
 
-    def testar_saudacao(self):
-        phrase = hear_audio(saudacao_1)
-        print(f"comando reconhecido: {phrase}")
+    def testar_familia(self):
+        phrase_familia = hear_audio(familia_salamandra)
+        print(f"comando reconhecido: {phrase_familia}")
 
-        action, target = get_tokenized_command(phrase)
-        is_valid,response = run_command(action, target)
+        action, target = get_tokenized_command(phrase_familia)
+        is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Oi, sou a Barber. Deseja fazer algum atendimento? Basta dizer o meu nome e em seguida o comando.")
+        self.assertTrue(response == "A salamandra pertence à família Salamandridae, que inclui também outras espécies de salamandras.")
+
+    def testar_pais(self):
+        phrase_pais = hear_audio(pais_salamandra)
+        print(f"comando reconhecido: {phrase_pais}")
+
+        action, target = get_tokenized_command(phrase_pais)
+        is_valid,response = run_command_two(action, target)
+
+        self.assertTrue(response == "As salamandras são encontradas em diversas partes do mundo, incluindo Europa, Ásia, América do Norte e Central.")
+
+    def testar_habitat(self):
+        phrase_habitat = hear_audio(habitat_salamandra)
+        print(f"comando reconhecido: {phrase_habitat}")
+
+        action, target = get_tokenized_command(phrase_habitat)
+        is_valid,response = run_command_two(action, target)
+
+        self.assertTrue(response == "As salamandras geralmente vivem em ambientes úmidos, como florestas, rios, lagos e riachos.")
+
+class TesteCachorro(unittest.TestCase):
+
+    def setUp(self):
+        get_data_settings()
+
+    def testar_familia(self):
+        phrase_familia = hear_audio(familia_cachorro)
+        print(f"comando reconhecido: {phrase_familia}")
+
+        action, target = get_tokenized_command(phrase_familia)
+        is_valid,response = run_command_two(action, target)
+
+        self.assertTrue(response == "O cachorro é um animal doméstico e pertence à família Canidae, que inclui também lobos, raposas e coiotes.")
+
+    def testar_pais(self):
+        phrase_pais = hear_audio(pais_cachorro)
+        print(f"comando reconhecido: {phrase_pais}")
+
+        action, target = get_tokenized_command(phrase_pais)
+        is_valid,response = run_command_two(action, target)
+
+        self.assertTrue(response == "Os cachorros, como animais domésticos, estão presentes em todo o mundo, mas seus ancestrais, os lobos, têm distribuição geográfica ampla, ocorrendo em todos os continentes, exceto a Antártica.")
+
+    def testar_habitat(self):
+        phrase_habitat = hear_audio(habitat_cachorro)
+        print(f"comando reconhecido: {phrase_habitat}")
+
+        action, target = get_tokenized_command(phrase_habitat)
+        is_valid,response = run_command_two(action, target)
+
+        self.assertTrue(response == "Os cachorros, como animais domésticos, geralmente vivem em ambientes domésticos, como casas e apartamentos, mas seus ancestrais, os lobos, vivem em habitats variados, como florestas, pradarias e tundras.")
+
+class TestePato(unittest.TestCase):
+
+    def setUp(self):
+        get_data_settings()
+
+    def testar_familia(self):
+        phrase_familia = hear_audio(familia_pato)
+        print(f"comando reconhecido: {phrase_familia}")
+
+        action, target = get_tokenized_command(phrase_familia)
+        is_valid,response = run_command_two(action, target)
+
+        self.assertTrue(response == "O pato pertence à família Anatidae, que inclui também outras aves aquáticas como gansos e cisnes.")
+
+    def testar_pais(self):
+        phrase_pais = hear_audio(pais_pato)
+        print(f"comando reconhecido: {phrase_pais}")
+
+        action, target = get_tokenized_command(phrase_pais)
+        is_valid,response = run_command_two(action, target)
+
+        self.assertTrue(response == "Os patos podem ser encontrados em quase todos os países do mundo, mas alguns dos principais países de origem são China, Estados Unidos, Rússia e França.")
+
+    def testar_habitat(self):
+        phrase_habitat = hear_audio(habitat_pato)
+        print(f"comando reconhecido: {phrase_habitat}")
+
+        action, target = get_tokenized_command(phrase_habitat)
+        is_valid,response = run_command_two(action, target)
+
+        self.assertTrue(response == "Os patos são encontrados em todo o mundo, em habitats aquáticos como lagos, rios, pântanos e oceanos.")
+
+class TestePeriquito(unittest.TestCase):
+
+    def setUp(self):
+        get_data_settings()
+
+    def testar_familia(self):
+        phrase_familia = hear_audio(familia_periquito)
+        print(f"comando reconhecido: {phrase_familia}")
+
+        action, target = get_tokenized_command(phrase_familia)
+        is_valid,response = run_command_two(action, target)
+
+        self.assertTrue(response == "O periquito pertence à família Psittacidae, que inclui também outras espécies de papagaios e araras.")
+
+    def testar_pais(self):
+        phrase_pais = hear_audio(pais_periquito)
+        print(f"comando reconhecido: {phrase_pais}")
+
+        action, target = get_tokenized_command(phrase_pais)
+        is_valid,response = run_command_two(action, target)
+
+        self.assertTrue(response == "Os periquitos são encontrados em diversos países, incluindo Austrália, América do Sul, África e Ásia.")
+
+    def testar_habitat(self):
+        phrase_habitat = hear_audio(habitat_periquito)
+        print(f"comando reconhecido: {phrase_habitat}")
+
+        action, target = get_tokenized_command(phrase_habitat)
+        is_valid,response = run_command_two(action, target)
+
+        self.assertTrue(response == "Os periquitos são encontrados em ambientes diversos, como florestas, savanas, desertos e até em áreas urbanas.")
 
 
 if __name__ == "__main__":
     carregador = unittest.TestLoader()
     testes = unittest.TestSuite()
 
-    testes.addTest(carregador.loadTestsFromTestCase(TesteNome))
-    testes.addTest(carregador.loadTestsFromTestCase(TesteAgendamento))
-    testes.addTest(carregador.loadTestsFromTestCase(TesteCortes))
-    testes.addTest(carregador.loadTestsFromTestCase(TesteDisponibilidade))
-    testes.addTest(carregador.loadTestsFromTestCase(TesteFila))
-    testes.addTest(carregador.loadTestsFromTestCase(TesteHorario))
-    testes.addTest(carregador.loadTestsFromTestCase(TestePagamento))
-    testes.addTest(carregador.loadTestsFromTestCase(TesteProduto))
-    testes.addTest(carregador.loadTestsFromTestCase(TesteSaudacao))
+    # testes.addTest(carregador.loadTestsFromTestCase(TesteNome))
+    testes.addTest(carregador.loadTestsFromTestCase(TesteLeao))
+    testes.addTest(carregador.loadTestsFromTestCase(TesteChita))
+    testes.addTest(carregador.loadTestsFromTestCase(TesteSalamandra))
+    testes.addTest(carregador.loadTestsFromTestCase(TesteCachorro))
+    testes.addTest(carregador.loadTestsFromTestCase(TestePato))
+    testes.addTest(carregador.loadTestsFromTestCase(TestePeriquito))
 
     executor = unittest.TextTestRunner()
     executor.run(testes)

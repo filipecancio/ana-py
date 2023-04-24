@@ -46,7 +46,7 @@
             "response": ""
         },
         {
-            "name": "familia",
+            "name": "família",
             "target": [
                 "leão",
                 "leões"
@@ -70,7 +70,7 @@
             "response": "O país de origem do leão é a maior parte da África subsaariana, exceto a região da floresta tropical e algumas áreas no extremo sul da África."
         },
         {
-            "name": "familia",
+            "name": "família",
             "target": [
                 "chita",
                 "china",
@@ -127,7 +127,7 @@
                 "sala",
                 "salamandras"
             ],
-            "response": "As salamandras geralmente vivem em ambientes úmidos, como florestas, rios, lagos e riachos."
+            "response": "As salamandras são encontradas em diversas partes do mundo, incluindo Europa, Ásia, América do Norte e Central."
         },
         {
             "name": "família",
