@@ -4,8 +4,26 @@ from playsound import playsound
 from nltk import word_tokenize, corpus
 import json
 import nltk
+import openai
+openai.api_key = ""
+
+
 nltk.download('stopwords')
 nltk.download('punkt')
+
+def chatGpt(model,question):
+    response = openai.Completion.create(
+        engine=model,
+        prompt=(f"Question: {question}\n"
+                "Answer:"
+                ),
+                max_tokens=100,
+                n=1,
+                stop=None,
+                temperature=0.5
+                )
+    answer = response.choices[0].text.split('\n')[0]
+    return answer
 
 def get_data_settings():
     global microphone
@@ -16,7 +34,7 @@ def get_data_settings():
     microphone = sr.Recognizer()
     stop_word = set(corpus.stopwords.words("portuguese"))
 
-    with open("database.json", "r") as settings_file:
+    with open("database2.json", "r") as settings_file:
         settings = json.load(settings_file)
 
         asisstent_name = settings["name"]
@@ -152,7 +170,8 @@ if __name__ == "__main__":
                 action, target = get_tokenized_command(command)
                 is_valid, response = run_command_two(action, target)
                 if is_valid:
-                    send_response(response)
+                    answer = chatGpt("davinci",response)
+                    send_response(answer)
                 else:
                     if action == None:
                         print("audio processado sem a key ana. Ignorar.")

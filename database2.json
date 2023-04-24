@@ -1,0 +1,205 @@
+{
+    "name": "ana",
+    "action_list": [
+        {
+            "name": "bom",
+            "target": [
+                "dia"
+            ],
+            "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
+        },
+        {
+            "name": "boa",
+            "target": [
+                "tarde",
+                "noite"
+            ],
+            "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
+        },
+        {
+            "name": "saudações",
+            "target": [
+                ""
+            ],
+            "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
+        },
+        {
+            "name": "olá",
+            "target": [
+                ""
+            ],
+            "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
+        },
+        {
+            "name": "tudo",
+            "target": [
+                "bom",
+                "bem"
+            ],
+            "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
+        },
+        {
+            "name": "nao",
+            "target": [
+                "reproduzir"
+            ],
+            "response": ""
+        },
+        {
+            "name": "família",
+            "target": [
+                "leão",
+                "leões"
+            ],
+            "response": "Qual a família do leão?"
+        },
+        {
+            "name": "habitat",
+            "target": [
+                "leão",
+                "leões"
+            ],
+            "response": "Qual a habitat natural do leão?"
+        },
+        {
+            "name": "país",
+            "target": [
+                "leão",
+                "leões"
+            ],
+            "response": "Qual o país de origem do leão?"
+        },
+        {
+            "name": "família",
+            "target": [
+                "chita",
+                "china",
+                "chitas",
+                "guepardo",
+                "guepardos"
+            ],
+            "response": "Qual a família da chita?"
+        },
+        {
+            "name": "habitat",
+            "target": [
+                "chita",
+                "china",
+                "chitas",
+                "guepardo",
+                "guepardos"
+            ],
+            "response": "Qual a habitat natural da chita?"
+        },
+        {
+            "name": "país",
+            "target": [
+                "chita",
+                "china",
+                "chitas",
+                "guepardo",
+                "guepardos"
+            ],
+            "response": "Qual o país de origem da chita?"
+        },
+        {
+            "name": "família",
+            "target": [
+                "salamandra",
+                "sala",
+                "salamandras"
+            ],
+            "response": "Qual a família da salamandra?"
+        },
+        {
+            "name": "habitat",
+            "target": [
+                "salamandra",
+                "sala",
+                "salamandras"
+            ],
+            "response": "Qual a habitat natural da salamandra?"
+        },
+        {
+            "name": "país",
+            "target": [
+                "salamandra",
+                "sala",
+                "salamandras"
+            ],
+            "response": "Qual o país de origem da salamandra?"
+        },
+        {
+            "name": "família",
+            "target": [
+                "cachorro",
+                "cachorros"
+            ],
+            "response": "Qual a família do cachorro?"
+        },
+        {
+            "name": "habitat",
+            "target": [
+                "cachorro",
+                "cachorros"
+            ],
+            "response": "Qual a habitat natural do cachorro?"
+        },
+        {
+            "name": "país",
+            "target": [
+                "cachorro",
+                "cachorros"
+            ],
+            "response": "Qual o país de origem de origem do cachorro?"
+        },
+        {
+            "name": "família",
+            "target": [
+                "pato",
+                "patos"
+            ],
+            "response": "Qual a família do pato?"
+        },
+        {
+            "name": "habitat",
+            "target": [
+                "pato",
+                "patos"
+            ],
+            "response": "Qual a habitat natural do pato?"
+        },
+        {
+            "name": "país",
+            "target": [
+                "pato",
+                "patos"
+            ],
+            "response": "Qual o país de origem de origem do pato?"
+        },
+        {
+            "name": "família",
+            "target": [
+                "periquito",
+                "periquitos"
+            ],
+            "response": "Qual a família do periquito?"
+        },
+        {
+            "name": "habitat",
+            "target": [
+                "periquito",
+                "periquitos"
+            ],
+            "response": "Qual a habitat natural do periquito?"
+        },
+        {
+            "name": "país",
+            "target": [
+                "periquito",
+                "periquitos"
+            ],
+            "response": "Qual o país de origem do periquito?"
+        }
+    ]
+}
