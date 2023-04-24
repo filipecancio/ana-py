@@ -1,0 +1,130 @@
+{
+    "name": "ana",
+    "action_list": [
+        {
+            "name": "bom",
+            "target": ["dia"],
+            "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
+        },
+        {
+            "name": "boa",
+            "target": ["tarde","noite"],
+            "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
+        },
+        {
+            "name": "saudações",
+            "target": [""],
+            "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
+        },
+        {
+            "name": "olá",
+            "target": [""],
+            "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
+        },
+        {
+            "name": "tudo",
+            "target": ["bom","bem"],
+            "response": "Oi, sou a Ana sua biologa assistente. Deseja saber algo sobre os animais?"
+        },
+        {
+            "name": "nao",
+            "target": ["reproduzir"],
+            "response": ""
+        },
+        {
+            "name": "familia",
+            "target": ["pato"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "pais",
+            "target": ["chita"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "habitat",
+            "target": ["leão"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "josias",
+            "target": ["fila"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "pedro",
+            "target": ["fila"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "carlos",
+            "target": ["fila"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "barbeiros",
+            "target": ["listas"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "qual",
+            "target": ["horário"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "vocês",
+            "target": ["aceitam"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "aceitam",
+            "target": ["pix","débito","crédito","dinheiro","cartão"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "qual",
+            "target": ["tipos","tipo","corte","procedimento","estilo"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "quais",
+            "target": ["tipos","tipo","corte","procedimento","estilo"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "que",
+            "target": ["tipos","tipo","corte","procedimento","estilo"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "tipo",
+            "target": ["cabelo","corte"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "vendem",
+            "target": ["água","refrigerante","produtos","salgadinho"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "posso",
+            "target": ["agendar","agenda"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "quero",
+            "target": ["agendar","agenda"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "agendar",
+            "target": ["josias","pedro","carlos"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        },
+        {
+            "name": "agenda",
+            "target": ["josias","pedro","carlos"],
+            "response": "Ainda não sei nada sobre. Desculpe nao poder ajudar."
+        }
+    ]
+}
