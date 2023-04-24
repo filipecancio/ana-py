@@ -34,7 +34,7 @@ def get_data_settings():
     microphone = sr.Recognizer()
     stop_word = set(corpus.stopwords.words("portuguese"))
 
-    with open("database2.json", "r") as settings_file:
+    with open("database.json", "r") as settings_file:
         settings = json.load(settings_file)
 
         asisstent_name = settings["name"]

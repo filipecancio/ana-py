@@ -51,7 +51,7 @@
                 "leão",
                 "leões"
             ],
-            "response": "A família do leão é a Felidae.Algumas outras espécies que fazem parte da família Felidae são: tigre, jaguar, leopardo, onça-pintada, gato doméstico, lince, entre outros."
+            "response": "Qual a família do leão?"
         },
         {
             "name": "habitat",
@@ -59,7 +59,7 @@
                 "leão",
                 "leões"
             ],
-            "response": "O habitat natural do leão são as savanas, planícies e algumas áreas de florestas da África Subsaariana."
+            "response": "Qual a habitat natural do leão?"
         },
         {
             "name": "país",
@@ -67,7 +67,7 @@
                 "leão",
                 "leões"
             ],
-            "response": "O país de origem do leão é a maior parte da África subsaariana, exceto a região da floresta tropical e algumas áreas no extremo sul da África."
+            "response": "Qual o país de origem do leão?"
         },
         {
             "name": "família",
@@ -78,7 +78,7 @@
                 "guepardo",
                 "guepardos"
             ],
-            "response": "A chita, também conhecida como guepardo, pertence à família Felidae, assim como o leão, o tigre e outras espécies de felinos."
+            "response": "Qual a família da chita?"
         },
         {
             "name": "habitat",
@@ -89,7 +89,7 @@
                 "guepardo",
                 "guepardos"
             ],
-            "response": "O habitat natural da chita, também conhecida como guepardo, é composto por savanas e algumas áreas semiáridas da África."
+            "response": "Qual a habitat natural da chita?"
         },
         {
             "name": "país",
@@ -100,7 +100,7 @@
                 "guepardo",
                 "guepardos"
             ],
-            "response": "A chita, também conhecida como guepardo, é nativa do continente africano e pode ser encontrada em diversos países, como Angola, Namíbia, Botswana, Zimbabwe, Moçambique, Tanzânia, Quênia e África do Sul."
+            "response": "Qual o país de origem da chita?"
         },
         {
             "name": "família",
@@ -109,7 +109,7 @@
                 "sala",
                 "salamandras"
             ],
-            "response": "A salamandra pertence à família Salamandridae, que inclui também outras espécies de salamandras."
+            "response": "Qual a família da salamandra?"
         },
         {
             "name": "habitat",
@@ -118,7 +118,7 @@
                 "sala",
                 "salamandras"
             ],
-            "response": "As salamandras geralmente vivem em ambientes úmidos, como florestas, rios, lagos e riachos."
+            "response": "Qual a habitat natural da salamandra?"
         },
         {
             "name": "país",
@@ -127,7 +127,7 @@
                 "sala",
                 "salamandras"
             ],
-            "response": "As salamandras são encontradas em diversas partes do mundo, incluindo Europa, Ásia, América do Norte e Central."
+            "response": "Qual o país de origem da salamandra?"
         },
         {
             "name": "família",
@@ -135,7 +135,7 @@
                 "cachorro",
                 "cachorros"
             ],
-            "response": "O cachorro é um animal doméstico e pertence à família Canidae, que inclui também lobos, raposas e coiotes."
+            "response": "Qual a família do cachorro?"
         },
         {
             "name": "habitat",
@@ -143,7 +143,7 @@
                 "cachorro",
                 "cachorros"
             ],
-            "response": "Os cachorros, como animais domésticos, geralmente vivem em ambientes domésticos, como casas e apartamentos, mas seus ancestrais, os lobos, vivem em habitats variados, como florestas, pradarias e tundras."
+            "response": "Qual a habitat natural do cachorro?"
         },
         {
             "name": "país",
@@ -151,7 +151,7 @@
                 "cachorro",
                 "cachorros"
             ],
-            "response": "Os cachorros, como animais domésticos, estão presentes em todo o mundo, mas seus ancestrais, os lobos, têm distribuição geográfica ampla, ocorrendo em todos os continentes, exceto a Antártica."
+            "response": "Qual o país de origem de origem do cachorro?"
         },
         {
             "name": "família",
@@ -159,7 +159,7 @@
                 "pato",
                 "patos"
             ],
-            "response": "O pato pertence à família Anatidae, que inclui também outras aves aquáticas como gansos e cisnes."
+            "response": "Qual a família do pato?"
         },
         {
             "name": "habitat",
@@ -167,7 +167,7 @@
                 "pato",
                 "patos"
             ],
-            "response": "Os patos são encontrados em todo o mundo, em habitats aquáticos como lagos, rios, pântanos e oceanos."
+            "response": "Qual a habitat natural do pato?"
         },
         {
             "name": "país",
@@ -175,7 +175,7 @@
                 "pato",
                 "patos"
             ],
-            "response": "Os patos podem ser encontrados em quase todos os países do mundo, mas alguns dos principais países de origem são China, Estados Unidos, Rússia e França."
+            "response": "Qual o país de origem de origem do pato?"
         },
         {
             "name": "família",
@@ -183,7 +183,7 @@
                 "periquito",
                 "periquitos"
             ],
-            "response": "O periquito pertence à família Psittacidae, que inclui também outras espécies de papagaios e araras."
+            "response": "Qual a família do periquito?"
         },
         {
             "name": "habitat",
@@ -191,7 +191,7 @@
                 "periquito",
                 "periquitos"
             ],
-            "response": "Os periquitos são encontrados em ambientes diversos, como florestas, savanas, desertos e até em áreas urbanas."
+            "response": "Qual a habitat natural do periquito?"
         },
         {
             "name": "país",
@@ -199,7 +199,7 @@
                 "periquito",
                 "periquitos"
             ],
-            "response": "Os periquitos são encontrados em diversos países, incluindo Austrália, América do Sul, África e Ásia."
+            "response": "Qual o país de origem do periquito?"
         }
     ]
 }
