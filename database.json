@@ -51,7 +51,7 @@
                 "leão",
                 "leões"
             ],
-            "response": "Qual a família do leão?"
+            "response": "no contexto da biologia, descreva a família do leão"
         },
         {
             "name": "habitat",
@@ -59,7 +59,7 @@
                 "leão",
                 "leões"
             ],
-            "response": "Qual a habitat natural do leão?"
+            "response": "Qual o habitat natural do leão?"
         },
         {
             "name": "país",
@@ -78,7 +78,7 @@
                 "guepardo",
                 "guepardos"
             ],
-            "response": "Qual a família da chita?"
+            "response": "no contexto da biologia, descreva a família da chita"
         },
         {
             "name": "habitat",
@@ -89,7 +89,7 @@
                 "guepardo",
                 "guepardos"
             ],
-            "response": "Qual a habitat natural da chita?"
+            "response": "Qual o habitat natural da chita?"
         },
         {
             "name": "país",
@@ -109,7 +109,7 @@
                 "sala",
                 "salamandras"
             ],
-            "response": "Qual a família da salamandra?"
+            "response": "no contexto da biologia, descreva a família da salamandra"
         },
         {
             "name": "habitat",
@@ -118,7 +118,7 @@
                 "sala",
                 "salamandras"
             ],
-            "response": "Qual a habitat natural da salamandra?"
+            "response": "Qual o habitat natural da salamandra?"
         },
         {
             "name": "país",
@@ -135,7 +135,7 @@
                 "cachorro",
                 "cachorros"
             ],
-            "response": "Qual a família do cachorro?"
+            "response": "no contexto da biologia, descreva a família do cachorro"
         },
         {
             "name": "habitat",
@@ -143,7 +143,7 @@
                 "cachorro",
                 "cachorros"
             ],
-            "response": "Qual a habitat natural do cachorro?"
+            "response": "Qual o habitat natural do cachorro?"
         },
         {
             "name": "país",
@@ -151,7 +151,7 @@
                 "cachorro",
                 "cachorros"
             ],
-            "response": "Qual o país de origem de origem do cachorro?"
+            "response": "no contexto da biologia, descreva o país de origem do cachorro"
         },
         {
             "name": "família",
@@ -159,7 +159,7 @@
                 "pato",
                 "patos"
             ],
-            "response": "Qual a família do pato?"
+            "response": "no contexto da biologia, descreva a família do pato"
         },
         {
             "name": "habitat",
@@ -167,7 +167,7 @@
                 "pato",
                 "patos"
             ],
-            "response": "Qual a habitat natural do pato?"
+            "response": "Qual o habitat natural do pato?"
         },
         {
             "name": "país",
@@ -175,7 +175,7 @@
                 "pato",
                 "patos"
             ],
-            "response": "Qual o país de origem de origem do pato?"
+            "response": "Qual o país de origem do pato?"
         },
         {
             "name": "família",
@@ -183,7 +183,7 @@
                 "periquito",
                 "periquitos"
             ],
-            "response": "Qual a família do periquito?"
+            "response": "no contexto da biologia, descreva a família do periquito"
         },
         {
             "name": "habitat",
@@ -191,7 +191,7 @@
                 "periquito",
                 "periquitos"
             ],
-            "response": "Qual a habitat natural do periquito?"
+            "response": "Qual o habitat natural do periquito?"
         },
         {
             "name": "país",

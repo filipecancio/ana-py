@@ -74,7 +74,7 @@ class TesteLeao(unittest.TestCase):
         action, target = get_tokenized_command(phrase_familia)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual a família do leão?")
+        self.assertTrue(response == "no contexto da biologia, descreva a família do leão")
 
     def testar_pais(self):
         phrase_pais = hear_audio(pais_leao)
@@ -92,7 +92,7 @@ class TesteLeao(unittest.TestCase):
         action, target = get_tokenized_command(phrase_habitat)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual a habitat natural do leão?")
+        self.assertTrue(response == "Qual o habitat natural do leão?")
 
 class TesteChita(unittest.TestCase):
 
@@ -106,7 +106,7 @@ class TesteChita(unittest.TestCase):
         action, target = get_tokenized_command(phrase_familia)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual a família da chita?")
+        self.assertTrue(response == "no contexto da biologia, descreva a família da chita")
 
     def testar_pais(self):
         phrase_pais = hear_audio(pais_chita)
@@ -124,7 +124,7 @@ class TesteChita(unittest.TestCase):
         action, target = get_tokenized_command(phrase_habitat)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual a habitat natural da chita?")
+        self.assertTrue(response == "Qual o habitat natural da chita?")
 
 class TesteSalamandra(unittest.TestCase):
 
@@ -138,7 +138,7 @@ class TesteSalamandra(unittest.TestCase):
         action, target = get_tokenized_command(phrase_familia)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual a família da salamandra?")
+        self.assertTrue(response == "no contexto da biologia, descreva a família da salamandra")
 
     def testar_pais(self):
         phrase_pais = hear_audio(pais_salamandra)
@@ -156,7 +156,7 @@ class TesteSalamandra(unittest.TestCase):
         action, target = get_tokenized_command(phrase_habitat)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual a habitat natural da salamandra?")
+        self.assertTrue(response == "Qual o habitat natural da salamandra?")
 
 class TesteCachorro(unittest.TestCase):
 
@@ -170,7 +170,7 @@ class TesteCachorro(unittest.TestCase):
         action, target = get_tokenized_command(phrase_familia)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual a família do cachorro?")
+        self.assertTrue(response == "no contexto da biologia, descreva a família do cachorro")
 
     def testar_pais(self):
         phrase_pais = hear_audio(pais_cachorro)
@@ -179,7 +179,7 @@ class TesteCachorro(unittest.TestCase):
         action, target = get_tokenized_command(phrase_pais)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual o país de origem de origem do cachorro?")
+        self.assertTrue(response == "no contexto da biologia, descreva o país de origem do cachorro")
 
     def testar_habitat(self):
         phrase_habitat = hear_audio(habitat_cachorro)
@@ -188,7 +188,7 @@ class TesteCachorro(unittest.TestCase):
         action, target = get_tokenized_command(phrase_habitat)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual a habitat natural do cachorro?")
+        self.assertTrue(response == "Qual o habitat natural do cachorro?")
 
 class TestePato(unittest.TestCase):
 
@@ -202,7 +202,7 @@ class TestePato(unittest.TestCase):
         action, target = get_tokenized_command(phrase_familia)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual a família do pato?")
+        self.assertTrue(response == "no contexto da biologia, descreva a família do pato")
 
     def testar_pais(self):
         phrase_pais = hear_audio(pais_pato)
@@ -211,7 +211,7 @@ class TestePato(unittest.TestCase):
         action, target = get_tokenized_command(phrase_pais)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual o país de origem de origem do pato?")
+        self.assertTrue(response == "Qual o país de origem do pato?")
 
     def testar_habitat(self):
         phrase_habitat = hear_audio(habitat_pato)
@@ -220,7 +220,7 @@ class TestePato(unittest.TestCase):
         action, target = get_tokenized_command(phrase_habitat)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual a habitat natural do pato?")
+        self.assertTrue(response == "Qual o habitat natural do pato?")
 
 class TestePeriquito(unittest.TestCase):
 
@@ -234,7 +234,7 @@ class TestePeriquito(unittest.TestCase):
         action, target = get_tokenized_command(phrase_familia)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual a família do periquito?")
+        self.assertTrue(response == "no contexto da biologia, descreva a família do periquito")
 
     def testar_pais(self):
         phrase_pais = hear_audio(pais_periquito)
@@ -252,7 +252,7 @@ class TestePeriquito(unittest.TestCase):
         action, target = get_tokenized_command(phrase_habitat)
         is_valid,response = run_command_two(action, target)
 
-        self.assertTrue(response == "Qual a habitat natural do periquito?")
+        self.assertTrue(response == "Qual o habitat natural do periquito?")
 
 
 if __name__ == "__main__":
