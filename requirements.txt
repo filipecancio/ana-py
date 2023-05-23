@@ -4,3 +4,5 @@ nltk
 gTTS
 playsound
 openai
+chatterbot
+chatterbot_corpus

@@ -5,6 +5,8 @@ from nltk import word_tokenize, corpus
 import json
 import nltk
 import openai
+from chatterbot import ChatBot 
+from chatterbot.trainers import ListTrainer 
 openai.api_key = ""
 
 
@@ -30,6 +32,7 @@ def get_data_settings():
     global stop_word
     global asisstent_name
     global action_list
+    global trainData
 
     microphone = sr.Recognizer()
     stop_word = set(corpus.stopwords.words("portuguese"))
@@ -42,7 +45,12 @@ def get_data_settings():
 
         settings_file.close()
 
-    
+    with open("train_db.json", "r") as train_file:
+        train_temp = json.load(train_file)
+        trainData = train_temp["data"]
+        train_file.close()
+
+
 
 def hear_voice():
     global microphone
@@ -160,6 +168,10 @@ if __name__ == "__main__":
     get_data_settings()
 
     is_alive = True
+    bot = ChatBot('Bot')
+    trainer = ListTrainer(bot)
+
+    trainer.train(trainData)
 
     while is_alive:
         try:
@@ -168,10 +180,15 @@ if __name__ == "__main__":
 
             if command:
                 action, target = get_tokenized_command(command)
-                is_valid, response = run_command_two(action, target)
-                if is_valid:
-                    answer = chatGpt("davinci",response)
+
+                phrase = bot.get_response(command)
+                if float(phrase.confidence) > 0.5:  
+                    answer = chatGpt("davinci",phrase)
                     send_response(answer)
+                #is_valid, response = run_command_two(action, target)
+                #if is_valid:
+                #    answer = chatGpt("davinci",response)
+                #    send_response(answer)
                 else:
                     if action == None:
                         print("audio processado sem a key ana. Ignorar.")
